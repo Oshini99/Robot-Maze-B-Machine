@@ -1,0 +1,41 @@
+digraph state {
+ graph [fontsize=12]
+rankdir=TB;
+"1" -> "5" [label = "exit_position", color = "firebrick"];
+"7" -> "4" [label = "wall", color = "sienna"];
+"6" -> "4" [label = "wall", color = "sienna"];
+"6" -> "2" [label = "wall", color = "sienna"];
+"6" -> "1" [label = "wall", color = "sienna"];
+"4" -> "4" [label = "wall", color = "sienna"];
+"4" -> "3" [label = "wall", color = "sienna"];
+"4" -> "2" [label = "wall", color = "sienna"];
+"3" -> "3" [label = "wall", color = "sienna"];
+"2" -> "5" [label = "wall", color = "sienna"];
+"2" -> "3" [label = "wall", color = "sienna"];
+"2" -> "1" [label = "wall", color = "sienna"];
+"1" -> "3" [label = "wall", color = "sienna"];
+"5" -> "ROOT-NODE" [label = "maze_y_position", color = "SlateBlue4"];
+"4" -> "ROOT-NODE" [label = "maze_y_position", color = "SlateBlue4"];
+"3" -> "ROOT-NODE" [label = "maze_y_position", color = "SlateBlue4"];
+"2" -> "ROOT-NODE" [label = "maze_y_position", color = "SlateBlue4"];
+"1" -> "ROOT-NODE" [label = "maze_y_position", color = "SlateBlue4"];
+"7" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"6" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"5" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"4" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"3" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"2" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"1" -> "ROOT-NODE" [label = "maze_x_position", color = "black"];
+"7" -> "ROOT-NODE" [label = "width", color = "#efdf84"];
+"5" -> "ROOT-NODE" [label = "height", color = "#bdef6b"];
+"1" [color = "wheat3", style = "filled, solid", shape = "box"]
+"5" [color = "wheat3", style = "filled, solid", shape = "box"]
+"7" [color = "wheat3", style = "filled, solid", shape = "box"]
+"4" [color = "wheat3", style = "filled, solid", shape = "box"]
+"6" [color = "wheat3", style = "filled, solid", shape = "box"]
+"2" [color = "wheat3", style = "filled, solid", shape = "box"]
+"3" [color = "wheat3", style = "filled, solid", shape = "box"]
+"ROOT-NODE" [color = "lightblue", style = "filled, solid", shape = "diamond"]
+subgraph "cluster_NOTIFICATIONS" {node [style=filled,color=white]; label="NOTIFICATIONS"; style=filled;color=lightgrey; }
+subgraph "cluster_RESPONSES" {node [style=filled,color=white]; label="RESPONSES"; style=filled;color=lightgrey; }
+}
